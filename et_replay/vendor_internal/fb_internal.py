@@ -15,15 +15,6 @@ def add_internal_skip_nodes(skip_nodes):
     return skip_nodes + internal_skip_nodes
 
 
-def add_internal_parallel_nodes_parents(parallel_nodes_parents):
-    internal_parallel_nodes_parents = [
-        "## sparse_data_dist ##",
-        "## wait_sparse_data_dist ##",
-        "## load_batch ##",
-    ]
-    return parallel_nodes_parents + internal_parallel_nodes_parents
-
-
 def add_internal_label():
     internal_label = "ProfilerStep#"
     return internal_label
